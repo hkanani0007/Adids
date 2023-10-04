@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+     <style>
+          .slider {
+               width: 300px;
+               height: 300px;
+               overflow: hidden;
+               white-space: nowrap;
+               /* float: left; */
+          }
+
+          .slider img {
+               display: inline-block;
+               width: 100%;
+          }
+
+          @keyframes slide {
+               0% {
+                    transform: translatex(0%);
+               }
+
+               20% {
+                    transform: translatex(0%);
+               }
+
+               25% {
+                    transform: translatex(-100%);
+               }
+
+               45% {
+                    transform: translatex(-100%);
+               }
+
+               50% {
+                    transform: translatex(-200%);
+               }
+
+               70% {
+                    transform: translatex(-200%);
+               }
+
+               75% {
+                    transform: translatex(-300%);
+               }
+
+               95% {
+                    transform: translatex(-300%);
+               }
+
+               100% {
+                    transform: translatex(-400%);
+               }
+
+          }
+
+          .slider img {
+               animation: slide 5s infinite;
+          }
+          /* .header-box {
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .header-box {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+} */
+/* .header-box {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.header-box h1 {
+  margin-top: 130px;
+  font-size: 24px;
+  color: #333333;
+} */
+
+
+
+
+          /* .gallery {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               background-color: aqua;
+          } */
+
+          /* .gallery:hover {
+               border: 1px solid black;
+          }
+
+          .gallery-item {
+               flex-basis: calc(22.10% - 70px);
+               margin-bottom: 10px;
+               border: 1px solid black;
+          }
+
+          img {
+               width: 300px;
+               height: 300px;
+               height: auto;
+          } */
+
+          /* .caption {
+               text-align: center;
+               font-size: 18px;
+               margin-top: 5px;
+          } */
+
+          /* .gallery {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+          }
+
+          .gallery-item {
+               flex-basis: calc(22.33% - 20px);
+               margin-bottom: 20px;
+               position: relative;
+          }
+
+          img {
+               width: 300px;
+               height: 300px;
+               height: auto;
+          } 
+
+          .overlay {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 300px;
+               height: 300px;
+               background-color: rgba(0, 0, 0, 0.7);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               opacity: 0;
+               transition: opacity 0.3s ease;
+          }
+
+          .gallery-item:hover .overlay {
+               opacity: 1;
+          }
+
+          .caption {
+               color: #fff;
+               font-size: 18px;
+               text-align: center;
+          } */
+          /* .gallery {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+          }
+
+          .gallery-item {
+               flex-basis: calc(10.33% - 20px);
+               margin-bottom: 20px;
+          }
+
+          img {
+               width: 400px;
+               height: 400px;
+          }
+
+          .caption {
+               text-align: center;
+               font-size: 18px;
+               margin-top: 5px;
+          } */
+          .hk{
+               width: 300px;
+               height: 300px;
+               border: 2px solid chartreuse;
+               background-image: url(images\ \(10\).jpg);
+               transition: 2s;
+          }
+          .hk:hover{
+               background-image: url(images\ \(11\).jpg);
+               transform: scale(1.02);
+          }
+          #jl{
+               width: 300px;
+               height: 400px;
+               border: 2px solid black;
+          }
+          .hk1{
+               width: 300px;
+               height: 100px;
+               border: 2px solid blue;
+          }
+          /* styles.css */
+
+/* Reset default margin and padding */
+/* body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+/* styles.css */
+
+/* Previous styles */
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+} */ 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set header styles */
+header {
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+/* Set content section styles */
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Set image section styles */
+.image-section {
+  text-align: center;
+}
+
+/* Set video section styles */
+.video-section {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+}
+
+.video-section iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Set history section styles */
+.history-section {
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+/* Set footer styles */
+/* footer {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+} */
+
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+     </style>
+</head>
+
+<body>
+     <div class="slider">
+          <img src="background  IVY2.jpg" alt="">
+          <img src="d37a706baa8ef5d0d8886a463607148d.jpg" alt="">
+          <img src="d37a706baa8ef5d0d8886a463607148d.jpg" alt="">
+          <img src="h61163_4_apparel_on-model_front-view_white.jpg" alt="">
+
+     </div>
+
+       
+
+       <!-- <header>
+         <nav>
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="products.html">Products</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+           </ul>
+         </nav>
+       </header>
+     
+       <main>
+         <section class="about">
+           <h2>About Adidas</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet enim non ligula aliquet aliquet. In hac habitasse platea dictumst.</p>
+         </section>
+       </main>
+     
+       <footer>
+         <p>&copy; 2023 Adidas. All rights reserved.</p>
+       </footer>
+     
+
+       
+         
+      
+       <div id="jl">
+
+          <div class="hk">
+
+          </div>
+          <div class="hk1">
+              dnwqkjldhqwlhfpqwhfpoqw;hfpqwoh
+          </div>
+       </div> -->
+       <!-- <header>
+          <h1>Company Stories</h1>
+      </header>
+      <main>
+          <section>
+              <h2>Story 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </section>
+  
+          <section>
+              <h2>Story 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </section>
+  
+          <!-- Add more sections for other stories -->
+  
+      <!-- </main>
+      <footer>
+          <p>&copy; 2022 Your Company. All rights reserved.</p>
+      </footer> -->
+
+      -->
+      <header>
+          <!-- Add your page header content here -->
+          <h1>About Us</h1>
+        </header>
+      
+        <div class="content">
+          <section class="image-section">
+            <!-- Add image content here -->
+            <img src="image.jpg" alt="About Us Image">
+          </section>
+      
+          <section class="video-section">
+            <!-- Add video content here -->
+            <iframe src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+          </section>
+      
+          <section class="history-section">
+            <!-- Add history content here -->
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et lobortis erat...</p>
+          </section>
+        </div>
+      
+        <footer>
+          <!-- Add your page footer content here -->
+          <p>&copy; 2021 Your Company. All rights reserved.</p>
+        </footer>
+
+
+
+
+        <body style="font-family:Verdana;color:#aaaaaa;">
+
+          <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+            <h1>Hello World</h1>
+          </div>
+          
+          <div style="overflow:auto">
+            <div class="menu">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+            </div>
+          
+            <div class="main">
+              <h2>Lorum Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+          
+            <div class="right">
+              <h2>About</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+          
+          <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+          
+
+
+
+   
+</body>
+
+</html>
